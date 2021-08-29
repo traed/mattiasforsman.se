@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mattias Forsman</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
+
+	<style>
+		:root {
+			--font-size: 16px;
+			--color-blob: #000d1a;
+			--color-dark: #001220;
+			--color-light: #eee;
+			--color-grey: #9FACBD;
+			--color-blue: #2A4965;
+		}
+
+		@media (min-width: 768px) {
+			:root {
+				--font-size: 20px;
+			}
+		}
+
+		body {
+			margin: 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			font-size: var(--font-size);
+			color: var(--color-light);
+			background: var(--color-dark);
+			overflow-x: hidden;
+		}
+
+		h1 {
+			font-family: 'ZCOOL KuaiLe', cursive;
+			font-weight: 400;
+			font-size: 4em;
+			margin-top: 0.1em;
+			margin-bottom: 0.25em;
+		}
+
+		section {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			padding: 100px 20vw;
+			height: calc(100vh - 200px);
+		}
+
+		main {
+			position: relative;
+		}
+
+		.spacer {
+			height: 25vh;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+		}
+
+		.layer-top {
+			top: 0;
+			background-image: url('./layered-waves-top.svg');
+		}
+
+		.layer-bottom {
+			bottom: 0;
+			background-image: url('./layered-waves-bottom.svg');
+		}
+
+		.text-content {
+			text-align: center;
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p {
+			line-height: 1.5;
+		}
+
+		#blob {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			max-width: 100%;
+			transform: translate(-50%, -50%);
+		}
+
+		#blob-2 {
+			visibility: hidden;
+		}
+
+		@media (min-width: 768px) {
+			.boxes {
+				display: flex;
+				flex-flow: row wrap;
+			}
+		}
+
+		.boxes .box {
+			padding: 1em;
+			background-color: var(--color-grey);
+			margin: 0.5em;
+			border-radius: 20px;
+			transition: all 0.2s ease;
+		}
+
+		.boxes .box:hover {
+			filter: brightness(0.8);
+		}
+
+		.boxes .box svg {
+			width: 75px;
+			aspect-ratio: 1 / 1;
+		}
+
+		.boxes .box svg path {
+			fill: var(--color-blue);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="spacer layer-top"></div>
+		<section class="text-content">
+			<h1>Mattias Forsman</h1>
+			
+			<div class="boxes">
+				<div class="box">
+					<a href="https://github.com/traed" aria-label="Github" target="_blank" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="#111111"><path fill-rule="evenodd" clip-rule="evenodd" fill="#111111" d="M32,0.8c-17.7,0-32,14.3-32,32c0,14.1,9.2,26.1,21.9,30.4 c1.6,0.3,2.2-0.7,2.2-1.5c0-0.8,0-2.8,0-5.4c-8.9,1.9-10.8-4.3-10.8-4.3c-1.5-3.7-3.6-4.7-3.6-4.7c-2.9-2,0.2-1.9,0.2-1.9 c3.2,0.2,4.9,3.3,4.9,3.3c2.9,4.9,7.5,3.5,9.3,2.7c0.3-2.1,1.1-3.5,2-4.3c-7.1-0.8-14.6-3.6-14.6-15.8c0-3.5,1.2-6.3,3.3-8.6 c-0.3-0.8-1.4-4.1,0.3-8.5c0,0,2.7-0.9,8.8,3.3c2.6-0.7,5.3-1.1,8-1.1c2.7,0,5.5,0.4,8,1.1c6.1-4.1,8.8-3.3,8.8-3.3 c1.7,4.4,0.6,7.7,0.3,8.5c2.1,2.2,3.3,5.1,3.3,8.6c0,12.3-7.5,15-14.6,15.8c1.1,1,2.2,2.9,2.2,5.9c0,4.3,0,7.7,0,8.8 c0,0.9,0.6,1.9,2.2,1.5C54.8,58.9,64,46.9,64,32.8C64,15.1,49.7,0.8,32,0.8z"></path></g></svg>
+					</a>
+				</div>
+				<div class="box">
+					<a href="https://www.linkedin.com/in/mattias-forsman-7082a0bb/" aria-label="Linkedin" target="_blank" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="#111111"><path fill="#111111" d="M61.3,0H2.7C1.2,0,0,1.2,0,2.7v58.7C0,62.8,1.2,64,2.7,64h58.7c1.5,0,2.7-1.2,2.7-2.7V2.7 C64,1.2,62.8,0,61.3,0z M19,54.5H9.5V24H19V54.5z M14.2,19.8c-3,0-5.5-2.5-5.5-5.5c0-3,2.5-5.5,5.5-5.5c3,0,5.5,2.5,5.5,5.5 C19.7,17.4,17.3,19.8,14.2,19.8z M54.5,54.5H45V39.7c0-3.5-0.1-8.1-4.9-8.1c-4.9,0-5.7,3.9-5.7,7.8v15.1h-9.5V24H34v4.2h0.1 c1.3-2.4,4.4-4.9,9-4.9c9.6,0,11.4,6.3,11.4,14.5V54.5z"></path></g></svg>
+					</a>
+				</div>
+				<div class="box">
+					<a href="https://twitter.com/forsmatic" aria-label="Twitter" target="_blank" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="#111111"><path fill="#111111" d="M64,12.2c-2.4,1-4.9,1.8-7.5,2.1c2.7-1.6,4.8-4.2,5.8-7.3c-2.5,1.5-5.3,2.6-8.3,3.2C51.5,7.6,48.1,6,44.3,6 c-7.3,0-13.1,5.9-13.1,13.1c0,1,0.1,2,0.3,3C20.6,21.6,10.9,16.3,4.5,8.4c-1.1,1.9-1.8,4.2-1.8,6.6c0,4.6,2.3,8.6,5.8,10.9 c-2.2-0.1-4.2-0.7-5.9-1.6c0,0.1,0,0.1,0,0.2c0,6.4,4.5,11.7,10.5,12.9c-1.1,0.3-2.3,0.5-3.5,0.5c-0.8,0-1.7-0.1-2.5-0.2 c1.7,5.2,6.5,9,12.3,9.1c-4.5,3.5-10.2,5.6-16.3,5.6c-1.1,0-2.1-0.1-3.1-0.2C5.8,55.8,12.7,58,20.1,58c24.2,0,37.4-20,37.4-37.4 c0-0.6,0-1.1,0-1.7C60,17.1,62.2,14.8,64,12.2z"></path></g></svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		<div class="spacer layer-bottom"></div>
+
+		<svg id="blob" viewBox="0 0 900 900" width="900" height="900">
+			<g transform="translate(451.71564588817927 493.22829150173504)" style="transition: all 0.3s ease 0s;">
+				<path id="blob-1" d="M253.3 -272.3C294.5 -212.1 270.7 -106.1 263.4 -7.3C256.1 91.5 265.2 182.9 224.1 222.9C182.9 262.9 91.5 251.5 19.2 232.2C-53 213 -106.1 186.1 -160.2 146.1C-214.4 106.1 -269.7 53 -278.9 -9.2C-288.1 -71.4 -251.2 -142.8 -197 -203C-142.8 -263.2 -71.4 -312.1 17.3 -329.4C106.1 -346.7 212.1 -332.5 253.3 -272.3" fill="#000d1a" style="transition: all 0.3s ease 0s;"></path>
+			</g>
+			<g transform="translate(390.7487019580234 523.5784592654544)" style="transition: all 0.3s ease 0s;">
+				<path id="blob-2" d="M270.6 -263.1C345.6 -195.6 397.8 -97.8 382.6 -15.2C367.4 67.4 284.8 134.8 209.8 175C134.8 215.2 67.4 228.1 3.7 224.4C-60.1 220.8 -120.2 200.5 -157.7 160.4C-195.2 120.2 -210.1 60.1 -233 -22.9C-255.8 -105.8 -286.7 -211.7 -249.2 -279.2C-211.7 -346.7 -105.8 -375.8 -4 -371.8C97.8 -367.8 195.6 -330.6 270.6 -263.1" fill="#000d1a" style="transition: all 0.3s ease 0s;"></path>
+			</g>
+		</svg>
+	</main>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const tween = KUTE.fromTo(
+				'#blob-1',
+				{ path: '#blob-1' },
+				{ path: '#blob-2' },
+				{ repeat: 999, duration: 8000, yoyo: true }
+			)
+
+			tween.start()
+		});
+	</script>
+</body>
+</html>
