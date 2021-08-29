@@ -165,14 +165,16 @@
 
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
-			const tween = KUTE.fromTo(
-				'#blob-1',
-				{ path: '#blob-1' },
-				{ path: '#blob-2' },
-				{ repeat: 999, duration: 8000, yoyo: true }
-			)
+			if(typeof KUTE !== 'undefined') {
+				const tween = KUTE.fromTo(
+					'#blob-1',
+					{ path: '#blob-1' },
+					{ path: '#blob-2' },
+					{ repeat: 999, duration: 8000, yoyo: true }
+				)
 
-			tween.start()
+				tween.start()
+			}
 		});
 	</script>
 </body>
